@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Cache - Betway Focus Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111827;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: #1f2937;
+            border-radius: 12px;
+            max-width: 500px;
+        }
+        h1 {
+            color: #10b981;
+            margin-bottom: 20px;
+        }
+        button {
+            background: linear-gradient(to right, #10b981, #059669);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background: linear-gradient(to right, #059669, #047857);
+        }
+        #status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+        .success {
+            background: #10b98120;
+            border: 1px solid #10b981;
+            color: #10b981;
+        }
+        .info {
+            background: #3b82f620;
+            border: 1px solid #3b82f6;
+            color: #3b82f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧹 Clear Cache</h1>
+        <p>Click the button below to clear all cached data and service workers.</p>
+        
+        <button onclick="clearEverything()">Clear Cache & Service Workers</button>
+        <button onclick="goToApp()">Go to App</button>
+        
+        <div id="status"></div>
+    </div>
+
+    <script>
+        async function clearEverything() {
+            const status = document.getElementById('status');
+            status.style.display = 'block';
+            status.className = 'info';
+            status.innerHTML = 'Clearing cache...';
+
+            try {
+                // Unregister all service workers
+                if ('serviceWorker' in navigator) {
+                    const registrations = await navigator.serviceWorker.getRegistrations();
+                    for (let registration of registrations) {
+                        await registration.unregister();
+                    }
+                }
+
+                // Clear all caches
+                if ('caches' in window) {
+                    const cacheNames = await caches.keys();
+                    await Promise.all(
+                        cacheNames.map(cacheName => caches.delete(cacheName))
+                    );
+                }
+
+                // Clear localStorage
+                localStorage.clear();
+
+                // Clear sessionStorage
+                sessionStorage.clear();
+
+                status.className = 'success';
+                status.innerHTML = '✅ Cache cleared successfully!<br><br>Click "Go to App" to reload with fresh data.';
+            } catch (error) {
+                status.className = 'info';
+                status.innerHTML = '⚠️ Error: ' + error.message + '<br><br>Try manually clearing your browser cache.';
+            }
+        }
+
+        function goToApp() {
+            window.location.href = '/index.html';
+        }
+    </script>
+</body>
+</html>

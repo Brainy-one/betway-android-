@@ -1,0 +1,70 @@
+{
+  "name": "Betway Focus Timer - Pomodoro Productivity",
+  "short_name": "Betway Timer",
+  "description": "Betway Focus Timer helps you stay productive with the Pomodoro technique. Break work into 25-minute focus sessions with automatic break reminders. Track your daily progress, build focus streaks, and boost productivity. Works completely offline with no ads or tracking. Perfect for students, remote workers, and anyone who wants to improve focus and time management.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#10b981",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icons/icon-71.png",
+      "sizes": "71x71",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-150.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-300.png",
+      "sizes": "300x300",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "features": [
+    "Customizable Pomodoro timer with focus and break intervals",
+    "Daily productivity tracking with session completion counter",
+    "Streak tracking to build consistent focus habits",
+    "Keyboard shortcuts for efficient timer control",
+    "Five neon color themes with modern dashboard interface",
+    "Complete offline functionality with no internet required",
+    "Privacy-focused with no ads, tracking, or data collection"
+  ],
+  "keywords": [
+    "betway",
+    "pomodoro timer",
+    "focus timer",
+    "productivity app",
+    "time management",
+    "work timer",
+    "study timer"
+  ],
+  "screenshots": []
+}
