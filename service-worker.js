@@ -1,4 +1,4 @@
-const CACHE_NAME = 'betway-focus-timer-v5';
+const CACHE_NAME = 'batway-focus-timer-v9';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -19,7 +19,7 @@ const urlsToCache = [
   '/icons/icon-300.png',
   '/icons/icon-512.png',
   '/icons/icon-1024.png',
-  '/betway Focus Timer logo.png',
+  '/icons/batway-Focus-Timer3.png',
   '/manifest.json'
 ];
 

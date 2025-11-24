@@ -1,4 +1,4 @@
-# Betway Focus Timer
+# Batway Focus Timer
 
 A neon-themed Pomodoro productivity timer with advanced features, offline PWA support, and Microsoft Store compatibility.
 

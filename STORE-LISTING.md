@@ -1,10 +1,10 @@
-# Microsoft Store Listing - Betway Focus Timer
+# Microsoft Store Listing - Batway Focus Timer
 
 ## 📱 App Title (50 char limit)
 
 **Primary Option:**
 ```
-Betway Focus Timer - Pomodoro Productivity
+Batway Focus Timer - Pomodoro Productivity
 ```
 (47 characters - includes main keywords: Focus Timer, Pomodoro, Productivity)
 
@@ -12,14 +12,14 @@ Betway Focus Timer - Pomodoro Productivity
 ```
 Focus Timer - Pomodoro Technique Productivity
 Pomodoro Timer - Focus & Productivity Tracker
-Betway Pomodoro - Focus Timer & Task Manager
+Batway Pomodoro - Focus Timer & Task Manager
 ```
 
 ### Title Strategy
 - ✅ "Focus Timer" - Primary search term
 - ✅ "Pomodoro" - Secondary search term (technique name)
 - ✅ "Productivity" - Category keyword
-- ✅ Brand name "Betway" for uniqueness
+- ✅ Brand name "Batway" for uniqueness
 - ✅ Natural language, not keyword stuffing
 
 ---
@@ -44,7 +44,7 @@ Neon-themed Pomodoro timer for focused work sessions. Track productivity with cu
 ## 📄 Full Description (10,000 char limit)
 
 ```
-Betway Focus Timer is a powerful Pomodoro technique timer designed to boost your productivity and help you focus on what matters. Whether you're studying, working, coding, or managing tasks, this focus timer helps you maintain concentration with proven time management methods.
+Batway Focus Timer is a powerful Pomodoro technique timer designed to boost your productivity and help you focus on what matters. Whether you're studying, working, coding, or managing tasks, this focus timer helps you maintain concentration with proven time management methods.
 
 FOCUS TIMER & POMODORO TECHNIQUE
 Use the classic Pomodoro method: work in focused 25-minute sessions followed by short breaks. The timer automatically switches between focus time and break time, helping you maintain peak productivity without burnout. Customize focus duration, short breaks, and long breaks to match your workflow.
@@ -124,7 +124,7 @@ PERFECT FOR:
 • Productivity enthusiasts
 • People with ADHD or focus challenges
 
-WHY CHOOSE BETWAY FOCUS TIMER:
+WHY CHOOSE BATWAY FOCUS TIMER:
 
 ✅ Completely Offline - No internet required, no external dependencies
 ✅ Privacy First - No tracking, no ads, no data collection
@@ -137,7 +137,7 @@ WHY CHOOSE BETWAY FOCUS TIMER:
 ✅ Free - No subscriptions, no in-app purchases
 
 POMODORO TECHNIQUE EXPLAINED:
-The Pomodoro Technique is a time management method that uses a timer to break work into focused intervals (traditionally 25 minutes) separated by short breaks. This technique helps improve focus, reduce mental fatigue, and increase productivity. Betway Focus Timer implements this proven method with modern features and customization options.
+The Pomodoro Technique is a time management method that uses a timer to break work into focused intervals (traditionally 25 minutes) separated by short breaks. This technique helps improve focus, reduce mental fatigue, and increase productivity. Batway Focus Timer implements this proven method with modern features and customization options.
 
 HOW TO USE:
 1. Click Start to begin a 25-minute focus session
@@ -276,7 +276,7 @@ Microsoft Store allows up to 7 keywords, 30 characters each:
 
 ### 2. Encourage Ratings & Reviews
 **In-App Prompts (Add Later):**
-- After 5 completed focus sessions: "Enjoying Betway Focus Timer? Rate us!"
+- After 5 completed focus sessions: "Enjoying Batway Focus Timer? Rate us!"
 - After 7-day streak: "You're on fire! 🔥 Help others discover this app"
 - Non-intrusive, can be dismissed
 - Link directly to Store rating page

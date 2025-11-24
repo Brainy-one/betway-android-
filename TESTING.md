@@ -1,4 +1,4 @@
-# Testing Guide - Betway Focus Timer
+# Testing Guide - Batway Focus Timer
 
 ## Quick Start
 
@@ -155,7 +155,7 @@ Open the app in your browser and follow the testing checklist below.
    - [ ] Console shows "Service Worker registered" message
 
 2. Check Cache Storage (DevTools → Application → Cache Storage)
-   - [ ] Cache named "betway-focus-timer-v1" exists
+   - [ ] Cache named "batway-focus-timer-v9" exists
    - [ ] Contains all files: HTML, CSS, JS, fonts, icons
 
 **Offline Functionality:**

@@ -1,16 +1,4 @@
-Perfect — **Format B (long, complete, explicit bullet-list feature section)**.
 
-I will now generate the **final PRD**, with:
-
-✅ FULL bullet-listed feature set (very detailed)
-✅ NO external resources allowed
-✅ Local Tailwind build
-✅ Local FontAwesome or SVG icons
-✅ Local Inter fonts
-✅ Full offline PWA support
-✅ Windsurf development phases
-✅ Appendix A placeholder ready for your full HTML
-*(You can tell me “continue” and I will paste the entire original HTML into Appendix A.)*
 
 ---
 

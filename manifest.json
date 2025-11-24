@@ -1,7 +1,7 @@
 {
-  "name": "Betway Focus Timer - Pomodoro Productivity",
-  "short_name": "Betway Timer",
-  "description": "Betway Focus Timer helps you stay productive with the Pomodoro technique. Break work into 25-minute focus sessions with automatic break reminders. Track your daily progress, build focus streaks, and boost productivity. Works completely offline with no ads or tracking. Perfect for students, remote workers, and anyone who wants to improve focus and time management.",
+  "name": "Batway Focus Timer - Pomodoro Productivity",
+  "short_name": "Batway Timer",
+  "description": "Batway Focus Timer helps you stay productive with the Pomodoro technique. Break work into 25-minute focus sessions with automatic break reminders. Track your daily progress, build focus streaks, and boost productivity. Works completely offline with no ads or tracking. Perfect for students, remote workers, and anyone who wants to improve focus and time management.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
@@ -58,7 +58,7 @@
     "Privacy-focused with no ads, tracking, or data collection"
   ],
   "keywords": [
-    "betway",
+    "batway focus timer",
     "pomodoro timer",
     "focus timer",
     "productivity app",
