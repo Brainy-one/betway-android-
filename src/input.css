@@ -7,38 +7,99 @@
 }
 
 body { 
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Inter', sans-serif;
+    background: #1a1a2e;
 }
 
-.neon-glow { 
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3); 
+/* Neumorphism Styles */
+.neu-card {
+    background: #1a1a2e;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px #0f0f1a, -8px -8px 16px #252542;
 }
 
-.neon-text { 
-    text-shadow: 0 0 10px rgba(34, 197, 94, 0.5); 
+.neu-card-inset {
+    background: #1a1a2e;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 16px #0f0f1a, inset -8px -8px 16px #252542;
 }
 
+.neu-btn {
+    background: #1a1a2e;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #0f0f1a, -6px -6px 12px #252542;
+    transition: all 0.2s ease;
+}
+
+.neu-btn:hover {
+    box-shadow: 4px 4px 8px #0f0f1a, -4px -4px 8px #252542;
+}
+
+.neu-btn:active, .neu-btn-pressed {
+    box-shadow: inset 4px 4px 8px #0f0f1a, inset -4px -4px 8px #252542;
+}
+
+.neu-input {
+    background: #1a1a2e;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 8px #0f0f1a, inset -4px -4px 8px #252542;
+    border: none;
+    outline: none;
+}
+
+.neu-input:focus {
+    box-shadow: inset 6px 6px 12px #0f0f1a, inset -6px -6px 12px #252542;
+}
+
+/* Timer circle neumorphism */
+.neu-timer-circle {
+    background: #1a1a2e;
+    border-radius: 50%;
+    box-shadow: 20px 20px 40px #0f0f1a, -20px -20px 40px #252542;
+}
+
+.neu-timer-inner {
+    background: #1a1a2e;
+    border-radius: 50%;
+    box-shadow: inset 10px 10px 20px #0f0f1a, inset -10px -10px 20px #252542;
+}
+
+/* Accent glow for active elements */
+.neu-glow-green {
+    box-shadow: 8px 8px 16px #0f0f1a, -8px -8px 16px #252542, 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.neu-glow-blue {
+    box-shadow: 8px 8px 16px #0f0f1a, -8px -8px 16px #252542, 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Progress ring */
 .progress-ring {
     transform: rotate(-90deg);
     transition: stroke-dashoffset 0.3s ease;
 }
 
-.timer-animation {
-    animation: pulse 2s infinite;
+/* Subtle text styling */
+.neu-text {
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px #0f0f1a;
 }
 
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+.neu-text-accent {
+    color: #10b981;
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
 }
 
-.gradient-border {
-    background: linear-gradient(45deg, #10b981, #3b82f6);
-    padding: 2px;
-    border-radius: 12px;
+/* Theme button styling */
+.theme-btn-neu {
+    box-shadow: 4px 4px 8px #0f0f1a, -4px -4px 8px #252542;
+    transition: all 0.2s ease;
 }
 
-.gradient-border-content {
-    background: #111827;
-    border-radius: 10px;
+.theme-btn-neu:hover {
+    transform: scale(1.1);
+}
+
+.theme-btn-neu.active {
+    box-shadow: inset 3px 3px 6px #0f0f1a, inset -3px -3px 6px #252542;
 }

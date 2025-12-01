@@ -297,15 +297,15 @@ function updateSessionInfo() {
     switch (state.currentPhase) {
         case 'focus':
             typeElement.textContent = 'Focus Time';
-            typeElement.className = 'px-3 py-1 bg-neon-green/20 text-neon-green rounded-full text-sm font-medium';
+            typeElement.className = 'neu-card-inset px-4 py-2 text-neon-green text-sm font-medium';
             break;
         case 'shortBreak':
             typeElement.textContent = 'Short Break';
-            typeElement.className = 'px-3 py-1 bg-neon-blue/20 text-neon-blue rounded-full text-sm font-medium';
+            typeElement.className = 'neu-card-inset px-4 py-2 text-neon-blue text-sm font-medium';
             break;
         case 'longBreak':
             typeElement.textContent = 'Long Break';
-            typeElement.className = 'px-3 py-1 bg-neon-purple/20 text-neon-purple rounded-full text-sm font-medium';
+            typeElement.className = 'neu-card-inset px-4 py-2 text-neon-purple text-sm font-medium';
             break;
     }
     
@@ -317,10 +317,12 @@ function updatePauseButton() {
     
     if (state.isRunning) {
         btn.innerHTML = '<i class="fas fa-pause mr-2"></i>Pause';
-        btn.className = 'px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 rounded-xl font-bold text-lg transition-all transform hover:scale-105 neon-glow';
+        btn.className = 'neu-btn px-6 md:px-8 py-3 md:py-4 text-red-400 font-bold text-base md:text-lg';
+        btn.style.boxShadow = '8px 8px 16px #0f0f1a, -8px -8px 16px #252542, 0 0 20px rgba(239, 68, 68, 0.3)';
     } else {
         btn.innerHTML = '<i class="fas fa-play mr-2"></i>Start';
-        btn.className = 'px-8 py-4 bg-gradient-to-r from-neon-green to-green-600 hover:from-green-600 hover:to-green-700 rounded-xl font-bold text-lg transition-all transform hover:scale-105 neon-glow';
+        btn.className = 'neu-btn px-6 md:px-8 py-3 md:py-4 text-neon-green font-bold text-base md:text-lg neu-glow-green';
+        btn.style.boxShadow = '';
     }
 }
 
@@ -344,9 +346,11 @@ function updateStreakDisplay() {
     for (let i = 0; i < 7; i++) {
         const box = document.createElement('div');
         if (i < stats.currentStreak) {
-            box.className = 'w-6 h-6 bg-neon-green rounded opacity-100';
+            box.className = 'w-5 h-5 md:w-6 md:h-6 rounded';
+            box.style.background = '#10b981';
+            box.style.boxShadow = '4px 4px 8px #0f0f1a, -4px -4px 8px #252542, 0 0 10px rgba(16, 185, 129, 0.4)';
         } else {
-            box.className = 'w-6 h-6 bg-gray-700 rounded opacity-50';
+            box.className = 'w-5 h-5 md:w-6 md:h-6 neu-card-inset rounded';
         }
         container.appendChild(box);
     }
@@ -377,37 +381,51 @@ function applyTheme() {
     const theme = themes[settings.theme];
     console.log('Applying theme:', settings.theme, theme);
     
-    // Update theme button borders
+    // Update theme button styling for neumorphism
     document.querySelectorAll('.theme-btn').forEach(btn => {
         if (btn.dataset.theme === settings.theme) {
-            btn.classList.add('border-white');
-            btn.classList.remove('border-transparent');
+            // Selected: inset shadow (pressed look)
+            btn.style.boxShadow = 'inset 3px 3px 6px #0f0f1a, inset -3px -3px 6px #252542';
+            btn.style.transform = 'scale(0.95)';
             console.log('Selected theme button:', btn.dataset.theme);
         } else {
-            btn.classList.remove('border-white');
-            btn.classList.add('border-transparent');
+            // Not selected: outset shadow (raised look)
+            btn.style.boxShadow = '4px 4px 8px #0f0f1a, -4px -4px 8px #252542';
+            btn.style.transform = 'scale(1)';
         }
     });
     
-    // Update progress ring color
+    // Update progress ring color with glow
     const ring = document.getElementById('progressRing');
     if (ring) {
         ring.setAttribute('stroke', theme.primary);
+        ring.style.filter = `drop-shadow(0 0 6px ${theme.primary}80)`;
         console.log('Progress ring color updated to:', theme.primary);
     }
     
-    // Update timer text color
+    // Update timer text color with glow
     const timerDisplay = document.getElementById('timerDisplay');
     if (timerDisplay) {
         timerDisplay.style.color = theme.primary;
+        timerDisplay.style.textShadow = `0 0 10px ${theme.primary}66`;
     }
     
-    // Update session type badge
+    // Update session type badge when in focus mode
     const sessionType = document.getElementById('sessionType');
     if (sessionType && state.currentPhase === 'focus') {
-        sessionType.style.backgroundColor = theme.primary + '33'; // 20% opacity
         sessionType.style.color = theme.primary;
     }
+    
+    // Update accent elements
+    document.querySelectorAll('.neu-text-accent').forEach(el => {
+        el.style.color = theme.primary;
+        el.style.textShadow = `0 0 10px ${theme.primary}66`;
+    });
+    
+    // Update glow buttons
+    document.querySelectorAll('.neu-glow-green').forEach(el => {
+        el.style.boxShadow = `8px 8px 16px #0f0f1a, -8px -8px 16px #252542, 0 0 20px ${theme.primary}4D`;
+    });
 }
 
 function setTheme(themeName) {

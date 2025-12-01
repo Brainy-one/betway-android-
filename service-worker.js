@@ -1,4 +1,4 @@
-const CACHE_NAME = 'betway-focus-timer-v10';
+const CACHE_NAME = 'betway-focus-timer-v12';
 const urlsToCache = [
   '/',
   '/index.html',
