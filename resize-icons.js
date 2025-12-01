@@ -2,7 +2,7 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 
-const sourceIcon = path.join(__dirname, 'icons', 'batway-Focus-Timer-1024.png');
+const sourceIcon = path.join(__dirname, 'icons', 'betway Focus Timer (1024 x 1024 px).png');
 const outputDir = path.join(__dirname, 'icons');
 
 // Sizes needed for Microsoft Store
